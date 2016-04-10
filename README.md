@@ -1,3 +1,3 @@
-# ProjectAndroid-CelestialSphere
+# Project-Android-CelestialSphere
 Android (Java) , OpenGL celestial sphere representation (end of studies' project)  ,
 old name: starstracker
