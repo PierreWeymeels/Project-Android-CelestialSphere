@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+              android:background="#ff000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Latitude"
+        android:textColor="#ff00ff00"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/latitude"
+        android:textColor="#ffff7f00"
+        android:background="#ffffffff"
+        android:numeric="integer"
+        android:maxLength="2"
+        android:layout_weight="0.04"
+        android:textAlignment="center"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nord"
+            android:id="@+id/nord"
+            android:checked="true"
+            android:textColor="#ffff7f00"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sud"
+            android:id="@+id/sud"
+            android:checked="false"
+            android:textColor="#ffff7f00"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Longitude"
+        android:textColor="#ff00ff00"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/longitude"
+        android:textColor="#ffff7f00"
+        android:background="#ffffffff"
+        android:numeric="integer"
+        android:maxLength="3"
+        android:layout_weight="0.05"
+        android:textAlignment="center"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Est"
+            android:id="@+id/est"
+            android:checked="true"
+            android:textColor="#ffff7f00"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ouest"
+            android:id="@+id/ouest"
+            android:checked="false"
+            android:textColor="#ffff7f00"/>
+    </RadioGroup>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bruxelles"
+        android:id="@+id/switchBxl"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:textColor="#ff00ff00"
+        android:background="#ff000000"
+        android:button="@android:color/holo_green_light"
+        />
+
+    <Button
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:text="Initialiser"
+        android:id="@+id/butIni"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff00ff00"
+        android:background="#ff000000"
+        />
+
+</LinearLayout>
